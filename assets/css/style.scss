@@ -3,13 +3,15 @@
 
 @import "{{ site.theme }}";
 
+
+
 // STYLING PREFERNCES for SITE
 // mixin used as a template for buttons
   @mixin button {
     width: auto;
     height: auto;
     border-radius: 10px;
-    background-color: #21807c;
+    background-color: #000000;
     border: 3px solid black;
     font-size: 1.5em;
 
@@ -31,7 +33,7 @@
 
    /* darkens the background color on hover to create a selecting effect */
   .button:hover {
-    background-color: #373737;
+    background-color: #474141;
   }
 
   /* "row style" is flexible size and aligns pictures in center */
@@ -86,5 +88,30 @@
   .calculator-equals {
     @extend .button;
     background-color: #e70f0f;
+  }
+  a,h1,h2 {  
+    color: rgb(13, 11, 91)
+  }
+  
+  a,h3,h4 {
+    color: rgb(97, 37, 37)
+  }
+  
+  #header nav ul li a {
+    background: none;
+    border: none;
+    }
+    #header nav ul li a:hover{
+      border: none;
+      background: none;
+      background-color: rgb(191, 15, 15);
+    color: rgb(255, 255, 255); 
+  }
+  
+  body {
+    font-family: monospace;
+  }
+  a h1,h2,h3,h4 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
